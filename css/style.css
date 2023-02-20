@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+:root{
+   /* --theme-color:#e74c3c;*/
+   --theme-color:#2ecc71;
+  
+ /* --theme-color:#FC427B;*/
+ /* --theme-color:#34e7e4;*/
+}
+section{
+    height:100vh;
+    width:100%;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url('../images/istockphoto-1179153745-612x612.jpg');
+    background-size: cover;
+    position:relative;
+}
+/* navbar */
+nav{
+    width:100%;
+   /* background-color:orangered;*/
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px 50px;
+
+}
+/* toggle btn
+.btn-show{
+    display:none;
+    width:30px;
+    height:30px;
+    background-color: var(--theme-color);
+    color:white;
+    padding:5px;
+    outline:none;
+    border:none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btn-show .bar{
+    height:2px;
+    width:100%;
+    background-color: white;
+}
+
+.show{
+    display:block !important;
+ }
+
+/* Logo */
+.header nav .logo{
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.header nav .logo span{
+    font-weight: 800;
+    color:var(--theme-color);
+
+}
+/* navbar Menu*/
+.header .navbar ul{
+    display:flex;
+    list-style: none;
+}
+.header .navbar ul li{
+    padding:10px 30px;
+    
+}
+.header .navbar ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.header .navbar ul li:hover a{
+    color:var(--theme-color);
+
+}
+/* sign up */
+.link-btn{
+    background-color:var(--theme-color);
+    color:white;
+    padding:5px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.header .navbar ul li.link-btn:hover{
+ 
+    background: white;
+    color:var(--theme-color);
+}
+/* banner */
+.header .banner{
+   color:#fff;
+   position: absolute; 
+   left:0;
+   top:150px;
+   padding-left: 50px;
+}
+.header .banner h1{
+ font-size: 50px;
+ text-transform: uppercase;
+ font-weight: 500;
+}
+.header .banner h1 span{
+    font-weight: 800;
+    color:var(--theme-color);
+}
+.header .banner p{
+   margin:30px 0; 
+}
+/*services*/
+.header .services{
+    background-color: #fff;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:800px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.header .services .service{
+    padding:20px;
+}
+.header .services .service h3{
+ font-size: 16px;
+ font-weight: 600;
+ margin:15px 0;
+ }
+ .header .services .service p{
+    color:rgba(0,0,0,0.5);
+    font-size: 14px;
+    margin:15px 0;    
+ }
+
+ .header .services .service a{
+    color:#333;
+    font-size: 14px;
+    font-weight: 500;
+ }
+ .header .services .service:nth-child(1){
+    background-color: #26282C;
+     }
+     .header .services .service:nth-child(1) h3,
+     .header .services .service:nth-child(1) a{
+        color:#fff;
+     }
+     .header .services .service:nth-child(1) p{
+        color:rgba(255,255,255,0.5);
+     }
+     .header .services .service:nth-child(2){
+     background-color: #E4E4E4;
+     }
+     .header .services .service:nth-child(3){
+    background-color: #F1F1F1;
+     }
+
+/*project*/
+
+.project{
+    background-color:#F1F1F1;
+}
+.row{
+    width:90%;
+    margin:auto;
+    display:flex;
+}
+.project .col{
+    width:50vw;
+    height:100vh;
+    padding: 100px;
+}
+.project .col h3{
+    font-size:30px;
+    font-weight: 500;
+    margin:30px 0;
+}
+.project .col p{
+    margin-bottom: 30px;
+    line-height: 30px;
+    color:rgba(0,0,0,0.6);
+}
+.project .col-2{
+    position:relative;
+
+}
+.project .box-1{
+  background-color: var(--theme-color);
+  position:absolute;
+  width:350px;
+  height:250px;
+  top:80px;
+  right:50px;
+  box-shadow:rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+   }
+.project .box-2{
+   position:absolute;
+   background-color: #f2dada;
+ width:100%;
+ height:300px;
+ bottom:0;
+ left:0;
+   
+}
+.project .img-box{
+ position:absolute;
+ background-image: url('../images/nasa-building-20.jpg');
+ width:400px;
+ height:400px;
+ background-size: cover;
+ left:130px;
+ top:140px;
+ box-shadow:rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+ 
+}
+.top{
+    position: fixed;
+    bottom:0;
+    right:10px;
+    padding:15px;
+    background-color: var(--theme-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  /*display:none; */
+}
+.top.active{
+    display:block; 
+}
+.top a{
+    color:white;
+    text-decoration: none;
+}
+.trend{
+    background-color: var(--theme-color);
+    color:#fff;
+}
+.trend .row{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trend .img-box{
+    width:600px;
+    height:300px;
+
+}
+.trend .img-box img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.trend h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin:10px 0;
+    padding-top:30px;
+}
+.trend p{
+    padding:30px;
+    margin:10px 0;
+    line-height: 30px;
+    }
+    /*feature*/
+.feature{
+    
+    width:90%;
+    margin:auto;
+}
+     
+.feature h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin:10px 10px;
+    padding-top: 20px;
+    color:#2ecc71;
+}
+
+.feature p{
+    margin:10px 10px;
+    line-height: 30px;
+    color:#333;
+
+}
+.feature .boxs{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.feature .boxs img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/*contact*/
+.contact .row1{
+    width:100vw;
+    height:40vh;
+    background-color: #2ecc71;
+}
+.contact .row1 h1{
+    color:#fff;
+    margin-left: 75px;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contact .row1 h3{
+    color:#fff;
+    font-size: 22px;
+    text-align: left;   
+    margin-top: 10px;
+}
+.contact .row1 .col-1{  
+    font-size: 25px;  
+    text-align: center;
+    padding-left: 50px;
+    margin-top: 20px;
+    color: #fff;
+    }
+.contact .row1 span{
+    color:white;
+    margin-top: -10px;    
+    margin-right:50px;
+    }
+.contact .row{    
+    width:100vw;
+    height:60vh;
+    margin:auto;
+    background-color:#fff;   
+}
+.contact h3{
+    color:var(--theme-color);
+    font-size:30px;
+    font-weight:700;
+    text-align: center; 
+    padding-left: 100px;   
+    margin-top: 50px;
+    text-transform: uppercase;
+   /* border-bottom: 1px solid #F1F1F1;*/
+  }
+  .contact .form{
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    }
+    .contact .form .col1{
+        padding-right: 50px; 
+        padding-left: 50px;
+    }
+    .contact .form .col3{
+        padding-right: 50px; 
+        padding-left: 50px;
+    }
+    .contact .form .form-group{
+      display:flex;
+      flex-direction:row;
+      padding-top: 30px;
+    }
+    .form .form-group label{
+      margin:0px 20px;
+      
+      color:var(--theme-color);
+      font-weight:500;
+    }
+    .form .form-group input{
+      height:20px;
+      padding:20px;
+      
+      border:1px solid #ccc;
+      outline :none;
+    }
+    .form .form-group textarea{
+        margin-right: 100px;
+      margin-bottom: 10px;
+      height:50px;
+      border:1px solid #ccc;
+      resize:none;
+      outline:none;
+      padding:10px;        
+    }
+    .form .form-group input:focus,
+    .form .form-group textarea:focus{
+      border:1px solid greenyellow;
+    }
+    .form .form-group:last-child button{
+      align-self:flex-start;
+      padding: 10px;
+      margin-left: 120px;
+      border-radius: 6px;
+      width:150px;
+      height:50px;
+      font-size: 16px;
+      color:white;
+      border:none;
+      background-color:var(--theme-color);
+      transition: 0.5s;
+    }
+    .form .form-group:last-child button:hover{
+      background-color:greenyellow;
+    }
+    
